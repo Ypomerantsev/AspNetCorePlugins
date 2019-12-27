@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <Content Update="wwwroot\**\*" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AspNetCorePlugins\AspNetCorePlugins.csproj" />
+    <ProjectReference Include="..\ExternalLibrary\ExternalLibrary.csproj" />
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="if not exist C:\_temp\Plugins\$(ProjectName) mkdir C:\_temp\Plugins\$(ProjectName)&#xD;&#xA;xcopy $(OutDir)*.* C:\_temp\Plugins\$(ProjectName) /e /y" />
+  </Target>
+
+</Project>
