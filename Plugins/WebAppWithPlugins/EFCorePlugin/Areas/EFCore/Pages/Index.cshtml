@@ -1,0 +1,16 @@
+﻿@page
+@model IndexModel
+
+@if (Model.Customers.Count() > 0)
+{
+    <ol>
+        @foreach (var customer in Model.Customers)
+        {
+            <li>@customer.Name</li>
+        }
+    </ol>
+}
+else
+{
+    <div>No customers in DB</div>
+}

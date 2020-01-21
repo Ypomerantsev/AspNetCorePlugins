@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebPlugin2", "WebAppWithPlu
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebAppWithPlugins", "WebAppWithPlugins", "{803E1B29-FCED-4412-83B4-A93C63FB4DA3}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFCorePlugin", "WebAppWithPlugins\EFCorePlugin\EFCorePlugin.csproj", "{A0BD5C4F-1966-46A7-9F79-0A4C20707FE4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,10 @@ Global
 		{59C13F0F-93AA-45AA-A774-19DD9254E8D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59C13F0F-93AA-45AA-A774-19DD9254E8D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59C13F0F-93AA-45AA-A774-19DD9254E8D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0BD5C4F-1966-46A7-9F79-0A4C20707FE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0BD5C4F-1966-46A7-9F79-0A4C20707FE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0BD5C4F-1966-46A7-9F79-0A4C20707FE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0BD5C4F-1966-46A7-9F79-0A4C20707FE4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,6 +57,7 @@ Global
 		{9F1EDFB0-1516-4BBB-BF81-9F1C23828848} = {803E1B29-FCED-4412-83B4-A93C63FB4DA3}
 		{76A525FB-B1C4-4DBF-9A60-BD1F97ABD5F3} = {803E1B29-FCED-4412-83B4-A93C63FB4DA3}
 		{59C13F0F-93AA-45AA-A774-19DD9254E8D8} = {803E1B29-FCED-4412-83B4-A93C63FB4DA3}
+		{A0BD5C4F-1966-46A7-9F79-0A4C20707FE4} = {803E1B29-FCED-4412-83B4-A93C63FB4DA3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BEB831D9-9A56-4CBD-A9CE-C925D9CC6295}
